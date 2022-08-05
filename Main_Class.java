@@ -1,13 +1,14 @@
 package coding_demo;
 
-class Main_Class // main class
-{
-	public static void main(String[] args) // main method
-	{
-		Problem_Class pc = new Problem_Class(); // creating object of Problem class
-		Producer_Class p1 = new Producer_Class(pc, 1); // creating object of Producer_class and passing the arguments to the constructor
-		Consumer_Class c1 = new Consumer_Class(pc, 2);  // creating object of Consumer_class and passing the arguments to the constructor
-	      c1.start(); // calling a run method
-	      p1.start(); // calling a run method
+public class Main_Class {
+
+	// main method that create the object or another classes and calls the method
+	public static void main(String[] args) {
+		FIbonacci_Series ob = new FIbonacci_Series(); // FIbonacci_Series object creation
+		Reverse_No ob1 = new Reverse_No(); // Reverse_no class object creation
+		ob.start(); // calls run method
+		ob1.start(); // calls run method
+
 	}
+
 }
